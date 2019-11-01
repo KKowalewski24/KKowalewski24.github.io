@@ -20,7 +20,7 @@ const TIMEOUT = 1000;
 $(document).scroll(function () {
   let scrollDistance = $(this).scrollTop();
 
-  if (scrollDistance > 100) {
+  if (scrollDistance > OFFSET_100) {
     scrollToTop.fadeIn();
   } else {
     scrollToTop.fadeOut();
@@ -56,8 +56,8 @@ body.scrollspy({
   offset: OFFSET_80
 });
 
-let collapseNavigationBar = () => {
-  if (mainNav.offset.top > 100) {
+let collapseNavigationBar = function () {
+  if (mainNav.offset().top > OFFSET_100) {
     mainNav.addClass("navbar-shrink");
   } else {
     mainNav.removeClass("navbar-shrink");
