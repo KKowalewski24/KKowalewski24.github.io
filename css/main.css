@@ -386,3 +386,7 @@ span::before {
     content: '\A';
     white-space: pre;
 }
+
+#currentDate {
+    display: inline-block;
+}

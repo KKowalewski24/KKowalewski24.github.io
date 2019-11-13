@@ -8,6 +8,7 @@ const scrollToTop = $(".scroll-to-top");
 const jsScrollTrigger = $(".js-scroll-trigger");
 const navbarCollapse = $(".navbar-collapse");
 const mainNav = $("#mainNav");
+const currentDate = $("#currentDate");
 
 const OFFSET_71 = 71;
 const OFFSET_80 = 80;
@@ -65,5 +66,6 @@ let collapseNavigationBar = function () {
 };
 
 /*------------------------ FUNCTION CALL ------------------------*/
+currentDate.text(new Date().getFullYear());
 collapseNavigationBar();
 $(window).scroll(collapseNavigationBar);
