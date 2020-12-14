@@ -382,6 +382,11 @@ form .row:first-child .floating-label-form-group {
     color: #2c3e50 !important;
 }
 
+.skills-list {
+    margin: 0;
+    padding-left: 3rem;
+}
+
 span::before {
     content: '\A';
     white-space: pre;
