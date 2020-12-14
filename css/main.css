@@ -382,9 +382,13 @@ form .row:first-child .floating-label-form-group {
     color: #2c3e50 !important;
 }
 
-.skills-list {
+.indented-list {
     margin: 0;
     padding-left: 3rem;
+}
+
+.font-size-1 {
+    font-size: 1.2rem;
 }
 
 span::after {
